@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplos de JavaScript</title>
+  <script>
+    LANGUAGE = "JavaScript">
+      /// Funcion de cambio de imagenes al mover el raton sobre ellas
+
+      // Imagenes seleccionadas
+      image1on = new Image();
+      image1on.src = "img-pratica/foto 1.jpg";
+      image2on = new Image();
+      image2on.src = "img-pratica/foto 1.jpg";
+
+      // Imagenes por defecto
+      image1off = new Image();
+      image1off.src = "";
+      image2off = new Image();
+      image2off.src = "img-pratica/IMAGEN3.jpg";
+
+      function img_act(imgNombre) {
+        imgOn = eval(imgNombre + "on.src");
+        document[imgNombre].src = imgOn;
+      }
+
+      function img_inact(imgNombre) {
+        imgOff = eval(imgNombre + "off.src");
+        document[imgNombre].src = imgOff;
+      }
+
+      ///   Scroll en en una ventana,
+      var txt ="Esta es la primera linea de texto que se desplaza " 
+      + " y esta es la segunda, puedes poner todas las" 
+      + " que quieras !                  ";
+  </script>
+</head>
+
+<body onLoad="scroll()" bgcolor="#C0C0C0">
+  <table border="1" width="100%">
+    <tr>
+      <td width="100%" bgcolor="#008080">
+        <p align="center">Aplicaciones de Java script</p>
+      </td>
+    </tr>
+  </table>
+  <p><br /></p>
+  <div align="center">
+    <center>
+      <table border="1" width="82%" height="77">
+        <tr>
+          <td width="50%" rowspan="2" height="71">
+            <table border="1" width="32%">
+              <tr>
+                <td width="100%" colspan="2" bgcolor="#FFFFFF">
+                  <p align="center">Cambio de imágenes</p>
+                </td>
+              </tr>
+              <tr>
+                <td width="50%" align="center" bgcolor="#0000FF">
+                  <img src="img-pratica/foto 1.jpg" name="image1" alt="1" onMouseOver="img_act('image1')"
+                    onMouseout="img_inact('image1')" width="118" height="118" />
+                </td>
+                <td width="50%" align="center" bgcolor="#0000FF">
+                  <img src="img-pratica/IMAGEN3.jpg" name="image2" alt="3" onMouseOver="img_act('image2')"
+                    onMouseout="img_inact('image2')" width="118" height="118" />
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td width="50%" height="8" bgcolor="#FFFFFF">
+            <p align="center">Caja de texto rotativo</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%" height="75" bgcolor="#0000FF">
+            <form name="frm">
+              <p><input type="text" name="w" size="45" /></p>
+            </form>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </div>
+  <div align="center">
+    <table border="1" width="56%">
+      <tr>
+        <td width="100%">
+          <p align="center">
+            <a href="javascript:window.history.back()"><img src="img-pratica/immagine.gif"
+                alt="immagine.gif (650 bytes)" align="middle" width="30" height="30" />Volver a la pagina anterior</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

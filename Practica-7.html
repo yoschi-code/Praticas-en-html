@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica de formularios</title>
+</head>
+
+<body>
+  <form action=”http://www.host.com/vfor.asp” method="POST">
+    Escriba su usuario:
+    <br>
+    <input type="text" name="usuario" size="10" maxlength="12">
+    <p><input type="submit" value="Enviar datos"></p>
+    &nbsp;&nbsp;<INPUT TYPE="reset" VALUE="Borrar datos">
+    <input type="password" name="clave" size="10" maxlength="12">
+    <textarea name="Comentarios" id="" cols="40" rows="6"></textarea>
+    <section>
+      <option value=”casualidad”>Por casualidad </option>
+      <option value=”periodico”>Por el periodico </option>
+      <option value=”buscadores”>En los buscadores </option>
+      <option value=”comentario”>Me lo comentaron </option>
+    </section>
+    <input type="checkbox" name="Lista">
+    Sí, deseo recibir información acerca de sus productos.
+    <BR>
+    <INPUT TYPE="radio" NAME="SistemaOperativo" VALUE="NT" CHECKED> Windows NT
+    <INPUT TYPE="radio" NAME="SistemaOperativo" VALUE="Mac"> Mac
+    <INPUT TYPE="radio" NAME="SistemaOperativo" VALUE="Unix"> Unix
+  </form>
+</body>
+
+</html>
